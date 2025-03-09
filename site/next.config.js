@@ -5,7 +5,7 @@ const nextConfig = {
     name: 'thechrisvasquez Technologies',
     description: 'The official store for my Kasm supported workspaces.',
     icon: '/img/logo.svg',
-    listUrl: 'https://registry.kasmweb.com/',
+    listUrl: 'https://thechrisvasquez.github.io/kasm-registry/',
     contactUrl: 'https://github.com/thechrisvasquez/kasm-registry/issues',
   },
   reactStrictMode: true,
