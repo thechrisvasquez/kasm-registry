@@ -23,18 +23,6 @@
   ],
   "compatibility": [
     {
-      "version": "1.16.x",
-      "image": "kasmweb/chromium:1.16.1",
-      "uncompressed_size_mb": 2643,
-      "available_tags": ["1.16.1"]
-    },
-    {
-      "version": "1.17.x",
-      "image": "kasmweb/chromium:1.17.0",
-      "uncompressed_size_mb": 2170,
-      "available_tags": ["1.17.0"]
-    },
-    {
       "version": "1.18.x",
       "image": "kasmweb/chromium:1.18.0",
       "uncompressed_size_mb": 2856,
