@@ -1,0 +1,35 @@
+{
+  "description": "Custom Chromium (htop + Desktop marker). 48-hour session limit.",
+  "docker_registry": "https://ghcr.io",
+  "image_src": "chromium.png",
+  "session_time_limit": 172800,
+  "run_config": {
+    "hostname": "kasm"
+  },
+  "exec_config": {
+    "go": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
+    },
+    "assign": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
+    }
+  },
+  "categories": [
+    "Browser"
+  ],
+  "friendly_name": "Chromium Custom",
+  "architecture": [
+    "amd64",
+    "arm64"
+  ],
+  "compatibility": [
+    {
+      "version": "1.19.x",
+      "image": "ghcr.io/thechrisvasquez/chromium-custom:1.19.0",
+      "uncompressed_size_mb": 1400,
+      "available_tags": [
+        "1.19.0"
+      ]
+    }
+  ]
+}
