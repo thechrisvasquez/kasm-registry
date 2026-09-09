@@ -8,11 +8,12 @@ cat > base/index.html << EOF
 EOF
 touch base/.nojekyll
 
-# Generating documentation for each other branch in a subdirectory
+# Only schema version branches become site versions
 echo "All branches:"
 git fetch --all
-echo "$(git branch --remotes --format '%(refname:lstrip=3)' | grep -Ev '^(HEAD|develop|gh-pages)$')"
-for BRANCH in $(git branch --remotes --format '%(refname:lstrip=3)' | grep -Ev '^(HEAD|develop|gh-pages)$'); do
+echo "1.0"
+echo "1.1"
+for BRANCH in 1.0 1.1; do
     SANITIZED_BRANCH="$(echo $BRANCH | sed 's/\//_/g')"
     echo "$SANITIZED_BRANCH" >> base/versions.txt
     git checkout $BRANCH
