@@ -18,7 +18,7 @@ jobs:
         run: |
           npm ci --prefix processing 
           npm ci --prefix site
-          ./build_all_branches.sh
+          sh build_all_branches.sh
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
