@@ -23,11 +23,11 @@
   ],
   "compatibility": [
     {
-      "version": "1.17.x",
-      "image": "kasmweb/chromium:develop",
-      "uncompressed_size_mb": 2170,
+      "version": "1.19.x",
+      "image": "kasmweb/chromium:1.19.0",
+      "uncompressed_size_mb": 1375,
       "available_tags": [
-        "develop"
+        "1.19.0"
       ]
     }
   ]
